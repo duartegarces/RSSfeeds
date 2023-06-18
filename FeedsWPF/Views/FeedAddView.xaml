@@ -1,0 +1,24 @@
+﻿<Window x:Class="FeedsWPF.Views.FeedAddView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FeedsWPF.Views"
+        mc:Ignorable="d"
+        Height="210" Width="410">
+    <StackPanel Height="200" Width="800" Background="DarkGray">
+
+        <Grid Height="250">
+            <Image Source="Images/rss.png" Margin="326,100,402,96"/>
+            <TextBlock Background="Transparent" Text="Feed's URL:" Margin="10,10,0,216" FontSize="14
+                     " HorizontalAlignment="Left"/>
+            <TextBlock Background="Transparent" Text="Keywords:" Margin="10,53,0,173" FontSize="14" HorizontalAlignment="Left"/>
+            <TextBox Background="White" Margin="102,10,411,216" FontSize="12"/>
+            <TextBox Background="White" Margin="102,52,554,174" FontSize="12"/>
+            <Button Content="Add Keyword" FontSize="10" Margin="257,54,460,174"/>
+            <ListBox Name="AddFeedList" Margin="10,92,693,88" SelectionChanged="AddFeedList_SelectionChanged"/>
+            <Button Content="Add Feed" FontSize="10" Margin="174,139,543,89"/>
+        </Grid>
+    </StackPanel>
+
+</Window>

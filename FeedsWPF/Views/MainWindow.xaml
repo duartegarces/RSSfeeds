@@ -1,0 +1,52 @@
+﻿<Window x:Class="FeedsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FeedsWPF"
+        xmlns:core="clr-namespace:FeedsWPF.Core"
+        mc:Ignorable="d"
+        Height="720" Width="1000"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="False">
+
+    <Window.DataContext>
+        <core:MainWindowBinding/>
+    </Window.DataContext>
+
+    <Border Background="DarkGray">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Rss Feeds" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="Black" FontSize="24" Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home" Height="50" Foreground="Black" FontSize="18" IsChecked="True" Command="{Binding HomeViewCommand}" Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Feeds" Height="50" Foreground="Black" FontSize="18" Command="{Binding FeedsViewCommand}" Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Notifications" Height="50" Foreground="Black" FontSize="18" Command="{Binding NotificationsViewCommand}" Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+            <TextBox Grid.Column="1"
+                     Width="240"
+                     Height="40"
+                     Text=""
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="5"
+                     Style="{StaticResource ModernTextbox}"/>
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="5"
+                            Content="{Binding CurrentView}"/>
+            <Button Name="Sair" Content="Quit" Grid.Column="1" Margin="573,525,70,45" Grid.Row="1" FontSize="24" Background="Gray" Click="Sair_Click"/>
+        </Grid>
+    </Border>
+</Window>

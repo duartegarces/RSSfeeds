@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="FeedsWPF.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FeedsWPF.Views"
+             mc:Ignorable="d" 
+             Height="600" Width="800">
+    <StackPanel Background="DarkGray">
+        <Grid Height="600" Width="800">
+            <Image Source="Images/rss.png" Margin="178,64,178,248"/>
+            <TextBlock Text="RSS Feed application developed by Duarte Garcês AL70860, Áurea Laranja AL70790, Ricardo Costa AL and Pedro Guerra AL70596" Margin="148,374,148,206" TextWrapping="Wrap" FontWeight="Bold"/>
+        </Grid>
+    </StackPanel>
+
+
+</UserControl>

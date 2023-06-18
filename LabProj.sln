@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeedsWPF", "FeedsWPF\FeedsWPF.csproj", "{3DE618C0-EF0A-4551-B32D-8C6FF7C7053F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{3ADB706D-FE47-466C-9564-6689D89DBC80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedsXamarin.Android", "FeedsXamarin\FeedsXamarin.Android\FeedsXamarin.Android.csproj", "{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedsXamarin", "FeedsXamarin\FeedsXamarin\FeedsXamarin.csproj", "{6590CAE4-49DF-4CF9-B552-94906733DC94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DE618C0-EF0A-4551-B32D-8C6FF7C7053F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE618C0-EF0A-4551-B32D-8C6FF7C7053F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE618C0-EF0A-4551-B32D-8C6FF7C7053F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE618C0-EF0A-4551-B32D-8C6FF7C7053F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADB706D-FE47-466C-9564-6689D89DBC80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADB706D-FE47-466C-9564-6689D89DBC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADB706D-FE47-466C-9564-6689D89DBC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADB706D-FE47-466C-9564-6689D89DBC80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F14ED4-9A68-4094-B45B-B6B14724BDEE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6590CAE4-49DF-4CF9-B552-94906733DC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6590CAE4-49DF-4CF9-B552-94906733DC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6590CAE4-49DF-4CF9-B552-94906733DC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6590CAE4-49DF-4CF9-B552-94906733DC94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7560834-0086-413D-A3F2-B1F6E46D219E}
+	EndGlobalSection
+EndGlobal

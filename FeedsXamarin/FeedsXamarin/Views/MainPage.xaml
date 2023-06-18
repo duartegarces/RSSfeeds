@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FeedsXamarin.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkGray" Padding="24" CornerRadius="0">
+            <Label Text="Rss Feeds App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <StackLayout Margin="20,35,20,20">
+            <Image Source="https://media.giphy.com/media/P8X4lemg5Iphe/giphy.gif"
+               IsAnimationPlaying="True"
+               HeightRequest="300" />
+    </StackLayout>
+        <Label Text="App developed by Pedro Guerra 70596 and Duarte Garcês 70860" FontSize="16" Padding="30,0,30,0"/>
+        <StackLayout Margin="20,50,20,20">
+            <Button Text="Feeds" BackgroundColor="DarkGray" Clicked="ButtonFeeds_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

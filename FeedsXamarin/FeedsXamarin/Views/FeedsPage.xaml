@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FeedsXamarin.Views.FeedsPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkGray" Padding="24" CornerRadius="0">
+            <Label Text="Rss Feeds App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <ListView BackgroundColor="Red"/>
+        <Button Text="Back" BackgroundColor="DarkGray" Clicked="ButtonBack_Clicked"/>
+    </StackLayout>
+</ContentPage>

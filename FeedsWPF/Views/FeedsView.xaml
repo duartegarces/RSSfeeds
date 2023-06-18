@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="FeedsWPF.Views.FeedsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:FeedsWPF.Core"
+             xmlns:local="clr-namespace:FeedsWPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:Controller x:Key="controller" />
+    </UserControl.Resources>
+
+
+    <StackPanel Background="DarkGray">
+
+        <Grid DataContext="{StaticResource ResourceKey=controller}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="600"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="355"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ListView Name="FeedsList" Background="Gray" Margin="83,58,83,58" MouseDoubleClick="FeedsList_MouseDoubleClick" IsSynchronizedWithCurrentItem="True" 
+                      ItemsSource="{Binding Feeds}" DisplayMemberPath="Title">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+            <StatusBar Margin="83,10,83,-62" Grid.Row="1" Background="Gray" Grid.ColumnSpan="2">
+                <StatusBarItem Name="Description" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </StatusBar>
+            <Image Source="Images/rss.png" Margin="56,99,56,99" Grid.Column="1"/>
+
+            <Button Name="Add_button" Margin="83,302,488,25" Click="Add_button_Click">
+                <StackPanel ToolTipService.InitialShowDelay="500" ToolTipService.ShowDuration="5000" ToolTipService.BetweenShowDelay="1000" ToolTip="Add Feed">
+                    <Image Source="Images/plus.png" Height="21" Width="21"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="Remove_Button" Margin="124,302,447,25" Click="Remove_Button_Click" ToolTipService.InitialShowDelay="500" ToolTipService.ShowDuration="5000" ToolTipService.BetweenShowDelay="1000" ToolTip="Remove Feed">
+                <StackPanel>
+                    <Image Source="Images/minus.png" Height="17" Width="17"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="Edit_button" Margin="164,302,407,25" Click="Edit_button_Click" ToolTipService.InitialShowDelay="500" ToolTipService.ShowDuration="5000" ToolTipService.BetweenShowDelay="1000" ToolTip="Edit Feed">
+                <StackPanel>
+                    <Image Source="Images/pencil.png" Height="21" Width="21"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="Refresh_button" Margin="488,302,83,25" Click="Refresh_button_Click" ToolTipService.InitialShowDelay="500" ToolTipService.ShowDuration="5000" ToolTipService.BetweenShowDelay="1000" ToolTip="Refresh Feed">
+                <StackPanel>
+                    <Image Source="Images/refresh.png" Height="21" Width="21"/>
+                </StackPanel>
+            </Button>
+            
+        </Grid>
+    </StackPanel>
+
+</UserControl>

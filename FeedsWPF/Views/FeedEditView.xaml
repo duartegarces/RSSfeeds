@@ -1,0 +1,24 @@
+﻿<Window x:Class="FeedsWPF.Views.FeedEditView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FeedsWPF.Views"
+        mc:Ignorable="d"
+        Height="215" Width="400">
+
+    <StackPanel Background="DarkGray">
+        <Grid>
+            <TextBox Text="Feed's URL:" Background="Transparent" Margin="5,6,321,-6"/>
+            <TextBox Text="Keywords:" Background="Transparent" Margin="5,32,321,-32"/>
+            <TextBlock Background="White" FontSize="12" Margin="85,6,81,-6"/>
+            <TextBlock Background="White" FontSize="12" Margin="85,32,181,-32"/>
+            <ListBox Name="EditFeedList" Margin="85,57,181,-127" SelectionChanged="EditFeedList_SelectionChanged"/>
+            <Button Content="Edit Keyword" Margin="224,32,81,-32"/>
+            <Button Content="Edit Feed" Margin="168,159,164,-159"/>
+
+
+        </Grid>
+    </StackPanel>
+
+</Window>
